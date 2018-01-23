@@ -1,0 +1,7 @@
+{
+  "name": "svn-repository-provider",
+  "description": "provider of subversion repositories",
+  "module": "src/svn-repository-provider.js",
+  "main": "dist/svn-repository-provider.js",
+  "keywords": ["repository-provider"]
+}
