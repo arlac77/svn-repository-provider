@@ -1,7 +1,69 @@
 {
   "name": "svn-repository-provider",
-  "description": "provider of subversion repositories",
-  "module": "src/svn-repository-provider.js",
+  "version": "0.0.0-semantic-release",
   "main": "dist/svn-repository-provider.js",
-  "keywords": ["repository-provider"]
+  "module": "src/svn-repository-provider.js",
+  "description": "provider of subversion repositories",
+  "keywords": [
+    "repository-provider"
+  ],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "scripts": {
+    "cover": "nyc --temp-directory build/nyc ava",
+    "precover": "rollup -c tests/rollup.config.js",
+    "test": "ava",
+    "pretest": "rollup -c tests/rollup.config.js",
+    "posttest": "npm run prepare && markdown-doctest",
+    "prepare": "rollup -c",
+    "docs": "documentation readme src/svn-repository-provider.js --section=API",
+    "lint": "documentation lint src/svn-repository-provider.js",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arlac77/svn-repository-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/svn-repository-provider/issues"
+  },
+  "homepage": "https://github.com/arlac77/svn-repository-provider#readme",
+  "ava": {
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "report-dir": "./build/coverage"
+  },
+  "xo": {
+    "space": true
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/arlac77/npm-package-template.git"
+    }
+  }
 }
