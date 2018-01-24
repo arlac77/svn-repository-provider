@@ -4,9 +4,7 @@
   "main": "dist/svn-repository-provider.js",
   "module": "src/svn-repository-provider.js",
   "description": "provider of subversion repositories",
-  "keywords": [
-    "repository-provider"
-  ],
+  "keywords": ["repository-provider"],
   "contributors": [
     {
       "name": "Markus Felten",
@@ -26,18 +24,10 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
-  "dependencies": {},
+  "dependencies": {
+    "repository-provider": "^2.17.1"
+  },
   "devDependencies": {
-    "jsdoc-babel": "-",
-    "jsdoc-to-markdown": "-",
-    "jsdoc": "-",
-    "istanbul": "-",
-    "mocha": "-",
-    "chai": "-",
-    "xo": "-",
-    "cz-conventional-changelog": "-",
-    "babel-plugin-transform-async-generator-functions": "-",
-    "mocha-lcov-reporter": "-",
     "documentation": "^5.3.5",
     "markdown-doctest": "^0.9.1",
     "nyc": "^11.4.1",
@@ -60,23 +50,13 @@
   },
   "homepage": "https://github.com/arlac77/svn-repository-provider#readme",
   "ava": {
-    "files": [
-      "build/*-test.js"
-    ],
-    "presets": [
-      "env"
-    ],
-    "require": [
-      "babel-register"
-    ]
+    "files": ["build/*-test.js"],
+    "presets": ["env"],
+    "require": ["babel-register"]
   },
   "nyc": {
-    "include": [
-      "build/*-test.js"
-    ],
-    "reporter": [
-      "lcov"
-    ],
+    "include": ["build/*-test.js"],
+    "reporter": ["lcov"],
     "report-dir": "./build/coverage"
   },
   "xo": {
