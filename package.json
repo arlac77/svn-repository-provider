@@ -30,7 +30,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "repository-provider": "^3.4.0"
+    "repository-provider": "^3.4.1"
   },
   "devDependencies": {
     "documentation": "^8.1.2",
