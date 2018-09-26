@@ -71,10 +71,12 @@
   },
   "nyc": {
     "include": [
-      "build/*-test.js"
+      "build/*-test.js",
+      "src/**/*.js"
     ],
     "reporter": [
-      "lcov"
+      "lcov",
+      "text"
     ],
     "report-dir": "./build/coverage"
   },
