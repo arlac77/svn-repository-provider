@@ -57,15 +57,15 @@
   },
   "homepage": "https://github.com/arlac77/svn-repository-provider#readme",
   "ava": {
-    "files": [
-      "build/*-test.js"
-    ],
-    "presets": [
-      "env"
-    ],
     "require": [
-      "babel-register"
-    ]
+      "esm"
+    ],
+    "babel": false,
+    "compileEnhancements": false,
+    "files": [
+      "tests/*-test.js"
+    ],
+    "presets": []
   },
   "xo": {
     "space": true
