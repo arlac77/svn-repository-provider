@@ -31,7 +31,7 @@
     "repository-provider": "^8.6.2"
   },
   "devDependencies": {
-    "documentation": "^8.1.2",
+    "documentation": "^9.0.0",
     "markdown-doctest": "^0.9.1",
     "rollup": "^0.67.4",
     "ava": "^1.0.0-rc.2",
