@@ -4,8 +4,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/svn-repository-provider.js",
-  "module": "src/svn-repository-provider.js",
+  "main": "src/svn-repository-provider.mjs",
+  "module": "src/svn-repository-provider.mjs",
   "description": "provider of subversion repositories",
   "keywords": [
     "repository-provider"
@@ -19,8 +19,8 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "cover": "c8 --temp-directory build/coverage ava && c8 report -r lcov --temp-directory build/coverage",
-    "docs": "documentation readme src/svn-repository-provider.js --section=API",
-    "lint": "documentation lint src/svn-repository-provider.js",
+    "docs": "documentation readme src/svn-repository-provider.mjs --section=API",
+    "lint": "documentation lint src/svn-repository-provider.mjs",
     "posttest": "markdown-doctest && npm run prepare",
     "test": "ava"
   },
