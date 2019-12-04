@@ -1,10 +1,11 @@
 {
   "name": "svn-repository-provider",
   "version": "0.0.0-semantic-release",
-  "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": false,
+  "type": "module",
   "main": "src/svn-repository-provider.mjs",
   "module": "src/svn-repository-provider.mjs",
   "description": "provider of subversion repositories",
@@ -66,6 +67,5 @@
     "repository": {
       "url": "https://github.com/arlac77/npm-package-template-esm-only.git"
     }
-  },
-  "sideEffects": false
+  }
 }
