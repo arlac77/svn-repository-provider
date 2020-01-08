@@ -24,7 +24,8 @@
     "docs": "documentation readme src/svn-repository-provider.mjs --section=API",
     "lint": "documentation lint src/svn-repository-provider.mjs",
     "posttest": "markdown-doctest && npm run prepare",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "repository-provider": "^16.10.3"
@@ -38,7 +39,7 @@
     "semantic-release": "^15.14.0"
   },
   "engines": {
-    "node": ">=12.14.0"
+    "node": ">=12.14.1"
   },
   "repository": {
     "type": "git",
