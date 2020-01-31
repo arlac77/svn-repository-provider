@@ -1,0 +1,10 @@
+{
+  "name": "svn-repository-provider",
+  "description": "provider of subversion repositories",
+  "icons": [
+    {
+      "src": "facicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
