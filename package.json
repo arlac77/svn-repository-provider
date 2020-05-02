@@ -8,7 +8,7 @@
   "type": "module",
   "main": "src/svn-repository-provider.mjs",
   "exports": {
-    ".": "./src/svn-repository-provider.mjs",
+    ".": "src/svn-repository-provider.mjs",
     "./": "./"
   },
   "description": "provider of subversion repositories",
