@@ -28,7 +28,7 @@
     "lint": "documentation lint src/svn-repository-provider.mjs"
   },
   "dependencies": {
-    "repository-provider": "^20.1.3"
+    "repository-provider": "^21.0.0"
   },
   "devDependencies": {
     "ava": "^3.8.2",
