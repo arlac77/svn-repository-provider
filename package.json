@@ -30,7 +30,7 @@
     "lint:docs": "documentation lint src/svn-repository-provider.mjs && documentation lint ./src/svn-repository-provider.mjs"
   },
   "dependencies": {
-    "repository-provider": "^23.13.2"
+    "repository-provider": "^23.13.3"
   },
   "devDependencies": {
     "ava": "^3.13.0",
