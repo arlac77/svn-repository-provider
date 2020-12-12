@@ -5,8 +5,6 @@
     "access": "public"
   },
   "sideEffects": false,
-  "type": "module",
-  "main": "./src/svn-repository-provider.mjs",
   "exports": {
     ".": "./src/svn-repository-provider.mjs"
   },
