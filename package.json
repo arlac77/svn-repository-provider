@@ -28,7 +28,7 @@
     "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
-    "repository-provider": "^32.3.2"
+    "repository-provider": "^32.3.3"
   },
   "devDependencies": {
     "ava": "^5.1.0",
